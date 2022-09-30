@@ -1,3 +1,4 @@
+from sqlite3.dbapi2 import _AnyParamWindowAggregateClass
 from student.student import (
     create_student, add_class, get_num_classes, summary, 
     get_student_with_more_classes
@@ -48,3 +49,7 @@ def test_get_student_with_more_classes():
 
 
 # TODO: Write additional tests to reach 100% test coverage
+def test_create_student():
+    # arrange
+    courses = []
+    name = [amanda]
