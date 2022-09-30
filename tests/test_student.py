@@ -44,7 +44,23 @@ def test_get_student_with_more_classes():
         ["mathematics", "foundations of computing"]
     )
 
+    # act
+    result = get_student_with_more_classes(ada, charles)
+
     # TODO: write assertions
+    # assert result == len(ada['courses'])
+    assert result == ada
 
 
 # TODO: Write additional tests to reach 100% test coverage
+def test_create_student():
+    # arrange
+    name = 'sarah'
+    level = '10'
+    courses = []
+
+    # act
+    create_student(name, level, courses)
+
+    # asset
+    assert courses == courses
